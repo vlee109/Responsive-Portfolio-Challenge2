@@ -4,14 +4,23 @@
 
 /* Add a background color to the top navigation */
 .topnav {
-  background-color: white;
+  background-color: peachpuff;
   overflow: hidden;
+}
+
+header{
+  color: white;
+  float: left;
+  display: inline-block;
+  margin-inline:calc(35px);
+  margin-top:calc(5px);
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
+  display: inline-block;
   float:right;
-  color: #f2f2f2;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -26,8 +35,43 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: tomato;
+  background-color: lightseagreen;
   color: white;
+}
+
+body, html {
+  height: 50%;
+}
+
+/* The hero image */
+.hero-image {
+  size-adjust:calc(5px);
+  background-color: peachpuff;
+  /* background-image: linear-gradient(red, purple, blue); */
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+/* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg"); */
+
+/* Set a specific height */
+height: 200%;
+
+/* Position and center the image to scale nicely on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+text-align: left;
+position: absolute;
+top: 50%;
+left: 1%;
+transform: translate(+50%, -50%);
+color: white;
+}
+
+.hero-image{
 }
 
 body {
