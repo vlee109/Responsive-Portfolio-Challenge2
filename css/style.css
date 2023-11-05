@@ -12,8 +12,8 @@ header{
   color: white;
   float: left;
   display: inline-block;
-  margin-inline:calc(35px);
-  margin-top:calc(5px);
+  margin-inline:calc(25px);
+  margin-top:calc(15px);
 }
 
 /* Style the links inside the navigation bar */
@@ -25,6 +25,7 @@ header{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 25px;
+  margin-top: 5px;
 }
 
 /* Change the color of links on hover */
@@ -52,7 +53,7 @@ body, html {
 /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg"); */
 
 /* Set a specific height */
-height: 200%;
+height: 300%;
 
 /* Position and center the image to scale nicely on all screens */
 background-position: center;
@@ -66,19 +67,60 @@ position: relative;
 text-align: left;
 position: absolute;
 top: 50%;
-left: 1%;
+left: 10%;
 transform: translate(+50%, -50%);
 color: white;
 }
 
 .hero-image{
+object-position:right;
 }
 
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+
+}
+
+* {
+  margin-left: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: center;
+  height: 20%;
+  width: 20%;
+  padding: 0 10px;
+  display:inline-block;
+  grid-template-columns:25% 25% 25% ;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 10px -50px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display:grid;
+  grid-template-rows: 25% 25% 25%;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  margin-left: 110px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 160px;
+  text-align: center;
+  background-color: turquoise;
 }
 
 h1,
@@ -93,3 +135,7 @@ h6 {
 p {
   margin: 0;
 }
+
+#footer > p:first-child { float: left; text-align: left; width: 33.3%; } 
+#footer > p:nth-child(2) { float: left; text-align: center; width: 33.4%; } 
+#footer > p:last-child { float: right; text-align: right; width: 33.3%; }
