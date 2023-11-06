@@ -1,5 +1,11 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+html{
+  display: block;
 }
 
 /* Add a background color to the top navigation */
@@ -25,7 +31,7 @@ header{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 25px;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 /* Change the color of links on hover */
@@ -46,7 +52,6 @@ body, html {
 
 /* The hero image */
 .hero-image {
-  size-adjust:calc(5px);
   background-color: peachpuff;
   /* background-image: linear-gradient(red, purple, blue); */
 /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -56,7 +61,7 @@ body, html {
 height: 300%;
 
 /* Position and center the image to scale nicely on all screens */
-background-position: center;
+background-position: right;
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;
@@ -67,7 +72,7 @@ position: relative;
 text-align: left;
 position: absolute;
 top: 50%;
-left: 10%;
+left: -10%;
 transform: translate(+50%, -50%);
 color: white;
 }
@@ -77,11 +82,11 @@ object-position:right;
 }
 
 body {
+  color: lightseagreen;
   margin: auto;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-
 }
 
 * {
@@ -123,19 +128,69 @@ body {
   background-color: turquoise;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.about-me{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 50px;
 }
 
-p {
-  margin: 0;
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
-#footer > p:first-child { float: left; text-align: left; width: 33.3%; } 
-#footer > p:nth-child(2) { float: left; text-align: center; width: 33.4%; } 
-#footer > p:last-child { float: right; text-align: right; width: 33.3%; }
+.title {
+border-right: 5px solid;
+min-height: 100%;
+text-align: right;
+padding-right: 40px;
+min-width: 20%;
+max-width: 20%;
+}
+
+.about-me{
+  float: right;
+  display: block;
+  margin-block-start: 1px;
+  margin-block-end: 20px;
+  margin-inline-start: 1em;
+  margin-inline-end: 1em;
+  margin-bottom: 1px;
+}
+
+.about-me2{
+color: white;
+}
+
+.my-work{
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightseagreen;
+}
+
+.my-work-title{
+  border-right: 5px solid violet;
+  min-height: 100%;
+  text-align: right;
+  padding-right: 40px;
+  min-width: 20%;
+  max-width: 20%;
+}
+
+
+/* .footer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 0px;
+  margin-bottom: 1Px;} */
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}

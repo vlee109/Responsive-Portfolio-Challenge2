@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Victor Lee // Front-End Web Developer</title>
-  <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
   <link rel="stylesheet" href="css/style.css">
   <style>
     img{
@@ -21,6 +20,9 @@
       background-color: lightseagreen;
       color: white;
     }
+    html{scroll-behavior: smooth;}
+
+
   </style>
 </head>
 
@@ -30,11 +32,12 @@
     <nav>
     </nav>
   </header>
-  <a class="active" href="#home">HOME</a>
-  <a href="#news">ABOUT</a>
-  <a href="#contact">PROJECTS</a>
-  <a href="#about">CONTACT</a>
+  <a class="#hero-image" href="#home">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#work">WORK</a>
+  <a href="#footer">CONTACT</a>
 </div>
+
 
 <body>
 
@@ -42,16 +45,28 @@
 
   <!-- hero banner -->
   <div class="hero-image">
-    <!-- <img src="images/IMG_7650.jpg" alt="" -->
+    <img src="images/IMG_7650.jpg" alt=""
     width="300"
     height="500">
 
     <div class="hero-text">
       <h1>Victor Lee</h1>
       <p>I am a frontend web developer!</p>
-      <button>Click Here to get in touch!</button>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      <br>Provident officiis vero architecto natus suscipit ipsa id doloribus.
+      <br>perferendis magnam adipisci distinctio dignissimos accusantium.
+      <br>nobis nihil. Enim, molestiae unde.</p>
     </div>
   </div>
+
+    <!-- portfolio container -->
+    <section class="page-section" id="work">
+      <h2>Work</h2>
+      <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      <br>Excepturi unde aspernatur, sint doloribus laudantium laborum maxime quidem ipsam nesciunt.
+      <br>Dolores accusantium ipsum qui quaerat distinctio eligendi commodi aperiam molestiae blanditiis?</h5>
+      <br>
+    </section>
 
   <div class="row">
     <div class="column">
@@ -74,26 +89,23 @@
     </div>
   </section> -->
 
-  <main class="page-wrapper">
     <!-- about me -->
-    <section class="page-section" id="about">
+    <section id="about">
+      <br>
       <h2>About Me</h2>
-    </section>
+      <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      <br>Quidem aspernatur fugit qui quas atque architecto molestiae sapiente repudiandae quo.
+      <br>porro maxime modi quos iure maiores aliquam aut et eaque odio!
+      <br>
+      <br>
+    </section> 
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
-
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
   </main>
 </body>
 
-<footer>
-  <div id="footer"> <p>Get in Touch!<br /> Second line of text</p> 
+<footer id="footer">
+  <h1>Contact me:</h2>
+  <div id="footer"> <p>Get in Touch!<br /></p> 
   <p>Email:<br /> Victor@UOB.com</p> 
   <p>Contact No:<br /> 07754138649</p> </div>
 </footer>
