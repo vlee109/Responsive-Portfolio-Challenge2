@@ -19,7 +19,7 @@ header{
   float: left;
   display: inline-block;
   margin-inline:calc(25px);
-  margin-top:calc(15px);
+  margin-top:calc(1px);
 }
 
 /* Style the links inside the navigation bar */
@@ -32,18 +32,19 @@ header{
   text-decoration: none;
   font-size: 25px;
   margin-top: 0px;
+  background-color: lightseagreen;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: lightseagreen;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
   background-color: lightseagreen;
-  color: white;
+  color: lightseagreen;
 }
 
 body, html {
@@ -84,18 +85,16 @@ object-position:right;
 body {
   color: lightseagreen;
   margin: auto;
-  padding: 0;
+  padding: 0px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
 }
 
-* {
-  margin-left: 10px;
-  box-sizing: border-box;
-}
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: lightseagreen;
+  right: 100px;
 }
 
 /* Float four columns side by side */
@@ -121,11 +120,11 @@ body {
 
 /* Style the counter cards */
 .card {
-  margin-left: 110px;
+  margin-left: 150px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 160px;
+  padding: 140px;
   text-align: center;
-  background-color: turquoise;
+  background-color: lightseagreen;
 }
 
 .about-me{
@@ -169,16 +168,6 @@ color: white;
   justify-content: space-between;
   background-color: lightseagreen;
 }
-
-.my-work-title{
-  border-right: 5px solid violet;
-  min-height: 100%;
-  text-align: right;
-  padding-right: 40px;
-  min-width: 20%;
-  max-width: 20%;
-}
-
 
 /* .footer{
   display: flex;
