@@ -6,6 +6,7 @@
 
 html{
   display: block;
+  position: relative;
 }
 
 /* Add a background color to the top navigation */
@@ -33,6 +34,7 @@ header{
   font-size: 25px;
   margin-top: 0px;
   background-color: lightseagreen;
+  text-decoration: underline;
 }
 
 /* Change the color of links on hover */
@@ -88,6 +90,7 @@ body {
   padding: 0px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  overflow: auto;
 }
 
 
