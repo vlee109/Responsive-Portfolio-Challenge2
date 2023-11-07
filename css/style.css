@@ -85,6 +85,7 @@ object-position:right;
 }
 
 body {
+  display: flexbox;
   color: lightseagreen;
   margin: auto;
   padding: 0px;
