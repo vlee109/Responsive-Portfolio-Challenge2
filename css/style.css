@@ -172,12 +172,19 @@ color: white;
   background-color: lightseagreen;
 }
 
-/* .footer{
+#projects1{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-  padding-top: 0px;
-  margin-bottom: 1Px;} */
+  padding: 190px;
+  padding-top: 3px;
+}
+
+#projects2{
+  display: flex;
+  justify-content: space-between;
+  padding: 190px;
+  padding-top: 3px;
+}
 
 footer{
   display: flex;
